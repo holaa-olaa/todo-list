@@ -8,7 +8,7 @@
 * [Setup](#setup)
 
 ## Demo
-Check it out! ---> https://holaa-olaa.github.io/currency-converter/
+Check it out! ---> https://holaa-olaa.github.io/todo-list/
 
 ## General info
 This is a simple application created mainly with JavaScript that allows you to add and edit a simple task list. Appearance and content created using HTML and CSS.
