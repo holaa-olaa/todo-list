@@ -22,34 +22,34 @@
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
-        removeButtons.forEach((removeButton, index) => {
+        removeButtons.forEach((removeButton, taskIndex) => {
             removeButton.addEventListener("click", () => {
-                removeTask(index);
+                removeTask(taskIndex);
             });
         });
 
         const doneButtons = document.querySelectorAll(".js-done");
 
-        doneButtons.forEach((doneButton, index) => {
+        doneButtons.forEach((doneButton, taskIndex) => {
             doneButton.addEventListener("click", () => {
-                taskDone(index);
+                taskDone(taskIndex);
             });
         });
     }
 
     const render = () => {
-        let htmlString = "";
+        let taskListContent = "";
 
         for (const task of tasks) {
             taskListContent += `
-            <li class="section__listItem">      
-                <button class="section__listButton section__listButton--toggleDone js-done"> 
+            <li class="tasks__item">      
+                <button class="tasks__button tasks__button--toggleDone js-done"> 
                     ${task.done ? "✔" : ""}
                 </button>  
-                <span class= " ${task.done ? "section__span--done" : ""}">
+                <span class="tasks__span ${task.done ? "tasks__span--done" : ""}">
                     ${task.content}
                 </span>
-                <button class="section__listButton section__listButton--remove js-remove">
+                <button class="tasks__button tasks__button--remove js-remove">
                 🗑
                 </button>
             </li>
