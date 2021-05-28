@@ -1,0 +1,11 @@
+.section {
+    background: hsl(0, 0%, 100%);
+    margin: 10px auto;
+}
+
+.section__header {
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: solid 1px hsl(0, 0%, 93%);
+    margin: 0;
+}
