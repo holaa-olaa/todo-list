@@ -1,5 +1,4 @@
 # To Do List
-![Previous Side Trailer]
 
 ## Table of contents
 * [Demo](#demo)
