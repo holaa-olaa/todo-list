@@ -50,7 +50,7 @@
                     ${task.content}
                 </span>
                 <button class="tasks__button tasks__button--remove js-remove">
-                🗑
+                    🗑
                 </button>
             </li>
             `;
@@ -85,7 +85,6 @@
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit);
-
     };
 
     init();
