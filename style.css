@@ -1,3 +1,110 @@
-.done {
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 900px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #eee;
+    ;
+}
+
+.section {
+    background: #ffffff;
+    margin: 10px auto;
+}
+
+.section__header {
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: solid 1px #eee;
+    margin: 0;
+}
+
+.section__span--done {
     text-decoration: line-through;
+}
+
+.form {
+    font-size: 16px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+}
+
+@media(max-width: 767px)
+{
+    .form {
+    grid-template-columns: 1fr;
+    }
+}
+
+.form__button {
+    background-color: #008080;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+}
+
+.form__button:hover {
+ background-color: #009999;
+}
+
+.form__button:active {
+    background-color: #00b3b3;
+}
+
+.form__input {
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.section__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section__listItem {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.section__listButton {
+    border: none;
+    height: 30px; 
+    width: 30px;
+    color: #ffffff;
+    padding: 0;
+}
+
+.section__listButton--toggleDone {
+    background-color: #1f811f;
+}
+
+.section__listButton--toggleDone:active {
+    background-color: hsl(120, 61%, 41%);
+}
+
+.section__listButton--remove {
+    background-color: #dc143c;
+}
+
+.section__listButton--remove:active {
+    background-color: #ec365b;
 }
