@@ -68,7 +68,7 @@
         event.preventDefault();
 
         const newTaskElement = document.querySelector(".js-newTask");
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTaskContent = newTaskElement.value.trim();
 
         clearInput(newTaskElement);
 
