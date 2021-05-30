@@ -27,6 +27,7 @@
     width: 30px;
     color: hsl(0, 0%, 100%);
     padding: 0;
+    cursor: pointer;
 }
 
 .tasks__button--toggleDone {
