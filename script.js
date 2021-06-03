@@ -70,7 +70,22 @@
         document.querySelector(".js-tasks").innerHTML = taskListContent;
     };
 
-    const renderButtons = () => {};
+    const renderButtons = () => {
+        let buttonsHTML = "";
+
+        if (tasks.length > 0) {
+            buttonsHTML = `
+            <button>
+                ${hideDoneTask ? "Pokaż ukończone" : "Ukryj ukończone"}
+            </button>
+            <button ${tasks.every(task => task.done) ? "disabled" : ""}>
+            Ukończ wszystkie
+            </button>
+            `
+        };    
+           
+        document.querySelector(".js-buttonsContainer").innerHTML = buttonsHTML;
+    };
 
     const render = () => {
         renderTasks();
