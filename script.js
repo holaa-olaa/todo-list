@@ -32,7 +32,7 @@
         render();
     };
 
-    const toggleAllTasksDone = () => {
+    const endAllTasks = () => {
         tasks = tasks.map(task => ({
             ...task,
             done: true,
@@ -67,8 +67,8 @@
 
         const buttonEndAllTasks = document.querySelector(".js-endAllTasks");
 
-         if(buttonEndAllTasks) {
-            buttonEndAllTasks.addEventListener("click", toggleAllTasksDone) 
+         if (buttonEndAllTasks) {
+            buttonEndAllTasks.addEventListener("click", endAllTasks) 
          };
     };
 
@@ -77,7 +77,7 @@
 
         for (const task of tasks) {
             taskListContent += `
-            <li class="tasks__item">      
+            <li class="tasks__item ${task.done && hideDoneTask ? " tasks__item--hidden" : ""}">      
                 <button class="tasks__button tasks__button--toggleDone js-done"> 
                     ${task.done ? "✔" : ""}
                 </button>  
