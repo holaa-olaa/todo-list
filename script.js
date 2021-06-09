@@ -56,7 +56,7 @@
                 toggleTaskDone(taskIndex);
             });
         });
-    }
+    };
 
     const bindButtonsEvents = () => {
         const buttonHideDoneTasks = document.querySelector(".js-toggleHideDoneTasks");
@@ -117,7 +117,7 @@
     const clearInput = (newTask) => {
         newTask.value = "";
         newTask.focus();
-    }
+    };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -129,7 +129,7 @@
 
         if (newTaskContent === "") {
             return;
-        }
+        };
 
         addNewTask(newTaskContent);
     };
