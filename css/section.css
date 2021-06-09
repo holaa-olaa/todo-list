@@ -1,11 +1,56 @@
 .section {
     background: hsl(0, 0%, 100%);
     margin: 10px auto;
+    box-shadow: 0 0 5px #ddd;
 }
 
 .section__header {
-    font-size: 20px;
-    padding: 20px;
     border-bottom: solid 1px hsl(0, 0%, 93%);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+}
+
+@media(max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section__heading {
+    font-size: 20px;
     margin: 0;
+}
+
+.section__buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section__button {
+    border: none;
+    background-color: transparent;
+    color: hsl(180, 100%, 25%);
+    margin: 0 0 0 20px;
+    transition: color 0.4s;
+    cursor: pointer;
+}
+
+@media(max-width: 767px) {
+    .section__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.section__button:disabled {
+    color: hsla(0, 4%, 50%, 0.3);
+    cursor: not-allowed;
 }
