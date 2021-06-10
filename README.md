@@ -19,7 +19,7 @@ Created for the course: YouCode II Frontend Developer
 
 ## How it works
 
-1. Enter the job content, then add with the button or press "Enter". The task will be moved to the list below, and the input will be cleared and focus set on it.
+1. Enter the task content, then add with the button or press "Enter". The task will be moved to the list below, and the input will be cleared and focus set on it.
 
 ![Adding new task](images/readmeGif1.gif)
 
@@ -38,7 +38,7 @@ Project is created with:
 * HTML
 * CSS (BEM naming convetion)
 * Grid
-* Flex
+* FlexBox
 * ES6+
 * Media queries
 	
